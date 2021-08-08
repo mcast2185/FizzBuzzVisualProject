@@ -22,10 +22,8 @@
                 <p id="para">This is a visually responsive demonstration of the FizzBuzz function. The function confirms whether the input 
                     passed fits the parameters before subsituting the multiples of 3 and 5 for: "Fizz", "Buzz" and/or "FizzBuzz". <br>
                     <br>
-                    
                     <input class="form-control" type="text" id="input_num" placeholder="Enter number here" onchange="newone()">
                 </p>
-                
                 <div class="card">
                     <div id="results" class="col-md-10"></div>
                 </div>
@@ -39,29 +37,26 @@
         const para = document.getElementById('para');
         const results = document.getElementById('results');
         const header = document.getElementById('header');
-        // const card = document.getElementsByClassName('card');
-
-        const container = document.getElementsByClassName('container');
-        
+    
         header.style.backgroundColor = 'teal';
         header.style.marginTop = '5vh';
         header.style.marginBottom = '0px';
         header.style.height = '10vh';
         header.style.width = '42vw';
         
-        para.style.borderTop = '1px solid black'
-        para.style.backgroundColor = 'royalblue'
+        para.style.borderTop = '1px solid black';
+        para.style.backgroundColor = 'royalblue';
         para.style.height = '25vh';
         para.style.width = '42vw';
         para.style.padding = '5px 20px';
         para.style.fontWeight = '500';
     
-        results.style.marginLeft = '50px'
+        results.style.marginLeft = '50px';
 
         const newone = () => {
             const input_value = input_num.value;
             if(isNaN(input_value)){
-                alert('Please type in a number from 1 - 100')
+                alert('Please type in a number from 1 - 100.');
             } else {
                 function fizzbuzz(){
                     for(i= 1; i < input_value; i++){
@@ -81,13 +76,13 @@
                             
                             results.appendChild(document.createTextNode(i + ',  '))
                             
-                        }
-                    }
-                }
+                        };
+                    };
+                };
                 console.log(fizzbuzz());
 
-            }
-        }
+            };
+        };
 
     
     </script>
