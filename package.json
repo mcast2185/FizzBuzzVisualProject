@@ -1,0 +1,16 @@
+{
+  "name": "fizzbuzz",
+  "version": "1.0.0",
+  "description": "visually displaying fizzbuzz",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mario Castro <ozymandias2185@gmail.com> (https://www.npmjs.com/~mcast2185)",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "mongodb": "^4.1.0",
+    "socket.io": "^4.1.3"
+  }
+}
